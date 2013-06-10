@@ -1,0 +1,36 @@
+@import "normalize.less";
+@import "functions.less";
+
+/* ===== Primary Styles ========================================================
+   Author: Maximillian Applin
+   www.max-applin.co.uk
+   www.wedowebsites.net
+   ========================================================================== */
+   
+@variable1: #000;
+@variable3: #ccc;
+@variable2: #fff;
+
+
+body {
+	color: @variable1;
+	background: @variable3;
+}
+
+a {
+	color: @variable2;
+	background: @variable3;
+	.rounded(5px); // Look in the functions file to see how this is being called.
+	
+	&:link {
+		color: @variable2;
+	}
+	
+	&:visited {
+		color: @variable2;
+	}
+}
+
+@import "media-queries.less";
+@import "helpers.less";
+@import "print.less";
